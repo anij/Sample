@@ -1,0 +1,20 @@
+This repo Sample contains, 2 Application right now,
+1. App1
+2. App2
+
+1. App1:  It is a sample Java Web application contains a Jersey web service
+          "App1/rest/customer" , Method type: GET, Media-type: application/json
+          Which will redirect the call to a Service of 
+          App2 : "App2/rest/customer".
+          
+          The redirection URL is provided in .properties file 
+          on the location 
+          "https://github.com/anij/Sample/blob/master/App1/src/resources/config.properties"
+          Note: You can provide any URL over here and the service will redirect it to it.
+                And, you can also modify this on runtime.
+                
+                
+2. App2: It is a sample Java Web application contains a Jersey web service
+          "App1/rest/customer" , Method type: GET, Media-type: application/json
+          and it will response a static message
+          {"Message":"Hello World"}
